@@ -28,11 +28,12 @@ body{
     padding: 20px;
     width: min(90%, 250px);
     background-color: var(--card-clr);
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: -15px 15px 10px 15px rgba(0, 0, 0, 0.2),
+                15px -15px 10px 15px rgba(0, 0, 0, 0.2);
 }
-
 .wrapper > img{
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .wrapper .title {
     font-size: 20px;
@@ -47,13 +48,56 @@ body{
     padding-bottom: 15px;
     color: var(--soft-clr);
 }
-
 .nft-details{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 15px;
+    border-bottom: 1px solid var(--line-clr);
+    margin-bottom: 15px;
 }
-
+.nft-details .nft{
+    display: flex;
+    align-items: center;
+}
+.nft img{
+    width: 12px;
+    margin-right: 5px;
+}
+.nft .nft-info{
+    font-size: 15px;
+    color: var(--cyan-clr);
+}
+.time{
+    display: flex;
+    align-items: center;
+}
+.time img{
+    width: 15px;
+    margin-right: 5px;
+}
+.time .time-info{
+    font-size: 13px;
+    color: var(--soft-clr);
+}
 .credit{
     display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.credit img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid var(--white-clr);
+}
+.credit .credit-details{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--soft-clr)
+}
+.credit .credit-details .name{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white-clr);
 }
